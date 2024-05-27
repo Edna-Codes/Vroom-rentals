@@ -1,4 +1,29 @@
-.header {
-  color: blue;
-  font-size: x-large;
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  z-index: var(--z-fixed);
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2em;
+}
+
+.nav-item {
+}
+
+.nav-links {
 }
