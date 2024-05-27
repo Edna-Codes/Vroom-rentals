@@ -3,10 +3,8 @@ import './index.css'
 import './components/Navbar'
 import Navbar from './components/Navbar'
 import { Routes, Route } from "react-router-dom";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Services from "./components/pages/Services";
-import Home from './components/pages/Home';
+import { About, Home, Contact, Services } from "./components/pages";
+
 
 function App() {
 
