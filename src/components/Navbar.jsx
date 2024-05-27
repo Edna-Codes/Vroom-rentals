@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 function Navbar () {
 
     return (
-        <>
-      <header className='nav-container'>
-      <nav className='navigation-bar'>
-            <div className='brand-logo'>
-            <Link to="/">VROOM</Link>
-            </div>
+      
+      <nav >
+            <Link className='tittle' to="/">VROOM</Link>
+        
             <div className='nav-menu'>
                 <ul className='nav-list'>
                     <li className='nav-item'>
@@ -24,9 +22,8 @@ function Navbar () {
                 </ul>
             </div>
         </nav>
-      </header>
-        
-        </>
+    
+    
     )
 
 }
