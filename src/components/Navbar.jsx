@@ -1,7 +1,10 @@
 import './Navbar.css'
 import { Link } from "react-router-dom";
+import { NavData } from './data'
 
 function Navbar () {
+
+    
 
     return (
       
@@ -11,14 +14,14 @@ function Navbar () {
             <div className='nav-menu'>
                 <ul className='nav-list'>
                     <li className='nav-item'>
-                        <Link to="/About">About</Link>
+                        <Link to="/about">About</Link>
                     </li>
-                    <li className='nav-item'> 
-                    <Link to="/Contact">Contact</Link>
+                    {/* <li className='nav-item'> 
+                    <Link to="/contact">Contact</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="/Services">Services</Link>
-                    </li>
+                        <Link to="/services">Services</Link>
+                    </li> */}
                 </ul>
             </div>
         </nav>
