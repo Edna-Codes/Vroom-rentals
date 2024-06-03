@@ -1,3 +1,3 @@
-import NavData from './NavData'
+import { NavData } from './NavData'
 
 export { NavData }
