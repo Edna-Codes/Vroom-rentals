@@ -1,4 +1,4 @@
-export const NavData = [
+export const navData = [
 
 {
     title: 'About',

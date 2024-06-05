@@ -1,6 +1,6 @@
 import './Navbar.css'
 import { Link } from "react-router-dom";
-import { NavData } from '../../data'
+import { navData } from '../../data'
 
 
 
@@ -13,17 +13,30 @@ function Navbar () {
     return (
 
 
-    
-            <>
-            {NavData.map((Navitems, index) => {
-              return (
-                <div key={index}>
+        <>
+           
+          <nav>
+            <Link className='tittle' to='./'>
+                VROOM
+            </Link>
+                  
+                    
                     <div className='nav-menu'>
-                      <Link to={Navitems.href}>{Navitems.title}</Link>
+                        <ul className='nav-list'>
+                       
+            {navData.map((item, i) => (
+                <li key={i} className='nav-item'>
+                <Link to={item.href}>{item.title}</Link>
+                </li>
+
+            ))}
+              
+                            
+                        </ul>
                     </div>
-                </div>
-              )
-            })}
+                
+          </nav>
+              
             </>
       
     //   <nav >
