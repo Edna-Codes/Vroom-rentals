@@ -1,20 +1,21 @@
 export const navData = [
+  {
+    title: "About",
+    href: "/about",
+  },
 
-{
-    title: 'About',
-    href: '/about'
-},
+  {
+    title: "Contact",
+    href: "/contact",
+  },
 
-{
-    title: 'Contact',
-    href: '/contact'
-},
+  {
+    title: "Services",
+    href: "/services",
+  },
 
-{
-    title: 'Services',
-    href: '/services'
-}
-
-
-]
-
+  {
+    title: "Feedback",
+    href: "/feedback",
+  },
+];
