@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { navData } from "../../data";
@@ -6,6 +7,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosNotifications } from "react-icons/io";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <nav>
@@ -13,7 +15,12 @@ function Navbar() {
           VROOM
         </Link>
 
-        <div className="menu">
+        <div
+          className="menu"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -21,7 +28,7 @@ function Navbar() {
 
         <div className="nav-links">
           <div className="nav-menu">
-            <ul className="nav-list">
+            <ul className={menuOpen ? "open" : ""}>
               {navData.map((item, i) => (
                 <li key={i} className="nav-item">
                   <Link to={item.href}>{item.title}</Link>

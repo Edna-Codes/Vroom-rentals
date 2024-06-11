@@ -26,6 +26,10 @@ nav ul {
   gap: 2rem;
 }
 
+nav ul.open {
+  display: flex;
+}
+
 nav ul li {
   list-style: none;
   padding: 0.5rem;
@@ -87,5 +91,30 @@ nav .menu span {
 @media (max-width: 992px) {
   nav .menu {
     display: flex;
+  }
+  nav .navButton {
+    display: none;
+  }
+  nav .nav-icons {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    margin: 0.2rem 10rem;
   }
 }
