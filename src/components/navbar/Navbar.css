@@ -31,7 +31,7 @@ nav ul li a {
   color: rgb(7, 7, 7);
 }
 nav ul li a:hover {
-  color: aqua;
+  color: rgb(80, 138, 138);
 }
 
 nav ul li a:focus {
