@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(70, 180, 175, 0.333);
+  background-color: rgba(230, 255, 255, 0.729);
   position: sticky;
   top: 0;
   padding: 1.5em;
@@ -21,9 +21,6 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  display: block;
-  border-radius: 2rem;
-  background-color: rgb(86, 51, 212);
   padding: 0.5rem;
   margin: 0 0.5rem;
   padding: 0.8rem;
@@ -31,5 +28,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(7, 7, 7);
+}
+nav ul li a:hover {
+  color: aqua;
+}
+
+nav ul li a:focus {
+  color: aqua;
 }
