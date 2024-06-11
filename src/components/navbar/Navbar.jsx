@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { navData } from "../../data";
+import {IconContext} from "react-icons";
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotifications } from "react-icons/io";
 
@@ -22,9 +23,20 @@ function Navbar() {
             ))}
           </ul>
         </div>
-        <div>
-          <Link><CiSearch /></Link>
-          <Link><IoIosNotifications /></Link>
+        <div className="nav-icons">
+          <div className="icon">
+          <IconContext.Provider value={{color: 'black', size: '2em'}}>
+   <CiSearch/>
+
+</IconContext.Provider>
+          </div >
+          <div className="icon">
+          <IconContext.Provider value={{color: 'black', size: '2em'}}>
+   
+   <IoIosNotifications/>
+</IconContext.Provider>
+          </div>
+   
         </div>
         <div>
           <button className="navButton">Contact us</button>
