@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { navData } from "../../data";
+import { CiSearch } from "react-icons/ci";
+import { IoIosNotifications } from "react-icons/io";
 
 function Navbar() {
   return (
@@ -10,15 +12,23 @@ function Navbar() {
           VROOM
         </Link>
 
+        <div className="nav-links">
         <div className="nav-menu">
           <ul className="nav-list">
             {navData.map((item, i) => (
               <li key={i} className="nav-item">
                 <Link to={item.href}>{item.title}</Link>
               </li>
-            
             ))}
           </ul>
+        </div>
+        <div>
+          <Link><CiSearch /></Link>
+          <Link><IoIosNotifications /></Link>
+        </div>
+        <div>
+          <button className="navButton">Contact us</button>
+        </div>
         </div>
       </nav>
     </>

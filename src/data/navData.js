@@ -13,12 +13,8 @@ export const navData = [
 {
     title: 'Services',
     href: '/services'
-},
-
-{
-    title: 'Faqs',
-    href: '/faqs'
 }
+
 
 ]
 
