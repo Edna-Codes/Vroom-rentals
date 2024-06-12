@@ -19,11 +19,14 @@ Please do the following **steps in this order**:
    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
 3. When you open your first pull request you should see the result of the GitHub Actions:
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+
+<img width="551" alt="gh-actions-eslint-stylelint-checks" src="https://github.com/Edna-Codes/vroom-rentals/assets/92020713/daece218-cf97-4882-b175-1cbfec480517">
+
 
 Click on the `Details` link to see the full output and the errors that need to be fixed:
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+![gh-actions-html-css-failing-checks](https://github.com/Edna-Codes/vroom-rentals/assets/92020713/ee5428d4-08bb-46af-affb-41998149e616)
+
 
 ## Set-up linters in your local env
 
