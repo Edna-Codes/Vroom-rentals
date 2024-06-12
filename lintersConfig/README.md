@@ -54,7 +54,7 @@ Click on the `Details` link to see the full output and the errors that need to b
 
    _not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._
 
-2. Copy [.stylelintrc.json](../.stylelintrc) to the root directory of your project.
+2. Copy [.stylelintrc](../.stylelintrc) to the root directory of your project.
 3. **Do not make any changes in config files.**
    - If you think that change is necessary - open a [Pull Request in this repository](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) and let your code reviewer know about it.
 4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
